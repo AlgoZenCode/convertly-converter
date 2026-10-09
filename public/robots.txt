@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://convertly.app/sitemap.xml
+
+# Block common admin or hidden directories if they exist
+Disallow: /private/
+Disallow: /tmp/
