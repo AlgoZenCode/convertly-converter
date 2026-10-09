@@ -14,75 +14,61 @@ const currentDate = new Date().toLocaleDateString("en-US", {
 
 <html lang="en">
   <head>
-    <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Dollar to INR Converter | Live Exchange Rate & Calculator</title>
+
+    <title>USD to INR Converter | Live Exchange Rate & Calculator</title>
     <meta
       name="description"
-      content="Convert Dollar to INR with live exchange rates. Use our free Dollar to Rupees converter calculator for USD to Indian Rupees conversion. Get accurate daily rates."
+      content="Convert USD to INR with live exchange rates. Use our free USD to INR calculator for fast and accurate US Dollar to Indian Rupee conversion."
     />
     <meta
       name="keywords"
-      content="dollar to inr, dollar to rupees, convert dollar to inr, calculator dollar to rs, dollar to indian rupees, 500 usd to inr, 100 usd to inr, usd to inr live, usd to inr rate, dollars to rupees converter, dollars to inr, dollar to inr today"
+      content="USD to INR, usd to inr, usd to rupees, convert usd to inr, usd to indian rupees, 100 usd to inr, 500 usd to inr, usd to inr rate, usd to inr live, dollar to inr, dollars to rupees, dollars to inr, usd inr calculator, usd to rupees converter"
     />
-    
-    <!-- Open Graph / Facebook -->
+
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://convertly.app/" />
-    <meta property="og:title" content="Dollar to INR Converter | Live Exchange Rate & Calculator" />
+    <meta property="og:title" content="USD to INR Converter | Live Exchange Rate & Calculator" />
     <meta
       property="og:description"
-      content="Convert USD Dollar to Indian Rupees (INR) with real-time exchange rates. Accurate calculator for dollar to rupees conversion. Free, fast, and reliable."
+      content="Convert USD to INR with live exchange rates. Accurate and real-time US Dollar to Indian Rupee conversion for daily use."
     />
     <meta property="og:image" content="https://convertly.app/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:site_name" content="Convertly" />
-    
-    <!-- Twitter -->
+
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://convertly.app/" />
-    <meta property="twitter:title" content="Dollar to INR Converter | Live Exchange Rate & Calculator" />
+    <meta property="twitter:title" content="USD to INR Converter | Live Exchange Rate & Calculator" />
     <meta
       property="twitter:description"
-      content="Convert Dollar to INR with live rates. Free USD to Rupees calculator. Real-time currency conversion."
+      content="Convert USD to INR with live exchange rates using our fast and reliable calculator."
     />
     <meta property="twitter:image" content="https://convertly.app/og-image.png" />
-    
-    <!-- Canonical URL -->
+
     <link rel="canonical" href="https://convertly.app/" />
-    
-    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
-    <meta name="robots" content="index, follow" />
     <meta name="author" content="Convertly" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
-    <meta name="distribution" content="global" />
-    
-    <!-- Structured Data (JSON-LD) -->
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "Convertly - Dollar to INR Converter",
-        "description": "Free online currency converter for USD to INR with live exchange rates",
+        "name": "Convertly - USD to INR Converter",
+        "description": "Free online USD to INR converter with live exchange rates and historical charts.",
         "url": "https://convertly.app",
         "applicationCategory": "FinanceApplication",
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD"
-        },
-        "creator": {
-          "@type": "Organization",
-          "name": "Convertly",
-          "url": "https://convertly.app"
         }
       }
     </script>
@@ -94,10 +80,10 @@ const currentDate = new Date().toLocaleDateString("en-US", {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "How much is 1 dollar to INR?",
+            "name": "How much is 1 USD to INR?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "1 USD is approximately 83-84 INR depending on current market rates. Use our live converter for the most accurate and up-to-date exchange rate."
+              "text": "1 USD is worth around a current market value in INR. Use our live calculator for the most current USD to INR rate."
             }
           },
           {
@@ -105,35 +91,24 @@ const currentDate = new Date().toLocaleDateString("en-US", {
             "name": "What is 100 USD to INR?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "100 USD converts to approximately 8,300-8,400 INR based on current exchange rates. Our calculator provides real-time conversion."
+              "text": "100 USD is converted to Indian Rupees using the live USD to INR exchange rate shown above."
             }
           },
           {
             "@type": "Question",
-            "name": "What is 500 USD to INR?",
+            "name": "What is the USD to INR exchange rate today?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "500 USD equals approximately 41,500-42,000 INR in current market rates. Check our live converter for instant updates."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this dollar to rupees converter accurate?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, our converter uses real-time exchange rates from the Frankfurter API, providing accurate USD to INR conversions updated multiple times daily."
+              "text": "The USD to INR exchange rate changes throughout the day due to market conditions. Our tool refreshes the live value automatically."
             }
           }
         ]
       }
     </script>
 
-    <!-- Preconnect to External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.frankfurter.app" />
-    
-    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -141,21 +116,5 @@ const currentDate = new Date().toLocaleDateString("en-US", {
   </head>
   <body>
     <ConverterPage client:load />
-
-    <!-- Schema Markup for Organization -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Convertly",
-        "url": "https://convertly.app",
-        "description": "Free online dollar to INR currency converter with live exchange rates and historical charts",
-        "sameAs": [],
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "IN"
-        }
-      }
-    </script>
   </body>
 </html>
